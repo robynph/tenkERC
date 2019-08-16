@@ -10,11 +10,11 @@ module.exports = {
       port: 7545,
       network_id: '*', // eslint-disable-line camelcase
     },
-    ropsten: {
+    rinkeby: {
       provider: function() {
         return new HDWalletProvider(
           process.env.MNEMONIC,
-          `https://ropsten.infura.io/${process.env.INFURA_API_KEY}`
+          `https://rinkeby.infura.io/${process.env.INFURA_API_KEY}`
         )
       },
       gas: 5000000,
